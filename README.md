@@ -1,6 +1,6 @@
 # Ola
 Sientete libre de analizar esta mrd con paciencia, el inge pidio muchas cosas
-No te olvides que `Formulario` estaba en el directorio de instalación de XAMPP
+No te olvides que `Formulario` estaba en el directorio de instalación de XAMPP en `htdocs`
 y la base de datos la exporte de `PHPMyAdmin`
 
 Esta compuesto por una pagina inicial en donde se puede
