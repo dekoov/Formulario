@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Investigación de mercado</title>
+</head>
+<body>
+    <main class="main-container">
+        <header>
+            <h1>Investigación de Mercado: App Productiva</h1>
+            <p>Gracias por tomarte el tiempo para responder a este breve cuestionario. El objetivo es recopilar información sobre tus necesidades y preferencias para desarrollar una app enfocada en la productividad. Tu opinión es valiosa y nos ayudara a crear una solución que se adapte mejor a tus expectativas. No te tomará mas de 5 minutos y tus respuestas seran confidenciales</p>
+            <p>Agradecemos mucho tu colaboración</p>
+        </header>
+        <form method="POST" action="confirmar_formulario.php">
+            <fieldset>
+                <legend>Perfil del participante</legend>
+                <div class="pregunta">
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" placeholder="David Leandro" name="nombre" id="nombre" required>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" placeholder="Correa Beltran" name="apellido" id="apellido" required>
+                    
+                </div>
+                <div class="pregunta">
+                    <label class="principal" for="edad">¿Cual es tu rango de edad?</label><br>
+                    <input type="radio" name="edad" id="menor 18" value="Menor 18">
+                    <label for="menor 18">Menos de 18 años</label><br>
+
+                    <input type="radio" name="edad" id="18-24" value="18-24">
+                    <label for="joven">18 - 24 años</label><br>
+
+                    <input type="radio" name="edad" id="25-35" value="25-35">
+                    <label for="adulto">25 - 35 años</label><br>
+
+                    <input type="radio" name="edad" id="mas de 45" value="Mas de 45">
+                    <label for="adulto mayor">45 años o más</label><br>
+                </div>
+                <div class="pregunta">
+                    <label class="principal" for="frec_herram">Con que frecuencia usas herramientas para organizar tus tareas o medir tu tiempo?</label><br>
+                    <input type="radio" name="frec_herram" id="nunca" value="Nunca">
+                    <label for="nunca">Nunca</label><br>
+
+                    <input type="radio" name="frec_herram" id="rara vez" value="Rara vez">
+                    <label for="rara vez">Rara vez</label><br>
+
+                    <input type="radio" name="frec_herram" id="a veces" value="A veces">
+                    <label for="a veces">A veces</label><br>
+
+                    <input type="radio" name="frec_herram" id="frecuentemente" value="Frecuentemente">
+                    <label for="frecuentemente">Frecuentemente</label><br>
+
+                    <input type="radio" name="frec_herram" id="siempre" value="Siempre">
+                    <label for="siempre">Siempre</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comportamientos y necesidades</legend>
+                <div class="pregunta">
+                    <label class="principal" for="funcion">¿Que funcionalidad valoras más en una aplicacion productiva?</label><br>
+                    <input type="checkbox" name="funcion[]" id="funcion 1" value="Temporizador pomodoro configurable">
+                    <label for="funcion 1">Temporizador pomodoro configurable</label><br>
+
+                    <input type="checkbox" name="funcion[]" id="funcion 2" value="Reportes y estadisticas diaria/semanal">
+                    <label for="funcion 2">Reportes y estadisticas diaria/semanal</label><br>
+
+                    <input type="checkbox" name="funcion[]" id="funcion 3" value="Recordatorios inteligentes">
+                    <label for="funcion 3">Recordatorios inteligentes</label><br>
+
+                    <input type="checkbox" name="funcion[]" id="funcion 4" value="Bloquear otras aplicaciones (focus)">
+                    <label for="funcion 4">Bloquear otras aplicaciones (focus)</label><br>
+
+                    <input type="checkbox" name="funcion[]" id="funcion 5" value="Sincronización entre dispositivos">
+                    <label for="funcion 5">Sincronización entre dispositivos</label><br>
+
+                    <label for="funcion 6">Otro:</label>
+                    <textarea name="funcion[]" id="funcion 6" placeholder="Describa la función"></textarea>
+                </div>
+                <div class="pregunta">
+                    <label class="principal" for="funcion">¿Qué tipo de tareas sueles monitorear o desearías monitorear a detalle?</label><br>
+                    <input type="radio" name="tarea" id="tarea 1" value="Trabajo/estudio">
+                    <label for="tarea 1">Trabajo/estudio</label><br>
+
+                    <input type="radio" name="tarea" id="tarea 2" value="Actividades fisicas"<>
+                    <label for="tarea 2">Actividades fisicas</label><br>                
+
+                    <input type="radio" name="tarea" id="tarea 3" value="Relaciones personales">
+                    <label for="tarea 3">Relaciones personales</label><br>
+
+                    <input type="radio" name="tarea" id="tarea 4" value="Actividades recreativas">
+                    <label for="tarea 4">Actividades recreativas</label><br>
+                </div>
+
+                <div class="pregunta">
+                    <label class="principal" for="funcion">Estarias dispuesto a pagar por una version premium con funcionalidades avanzadas?</label><br>
+                    <input type="radio" name="version" id="version 1" value="Si">
+                    <label for="tarea 1">Si</label><br>
+
+                    <input type="radio" name="version" id="version 2" value="No">
+                    <label for="tarea 2">No</label><br>                
+
+                    <input type="radio" name="version" id="version 3" value="Depende el precio">
+                    <label for="tarea 3">Depende el precio</label><br>
+                </div>
+            </fieldset>
+            <input class="boton-enviar" type="submit" value="Confirmar">
+        </form>
+    </main>
+</body>
+</html>
